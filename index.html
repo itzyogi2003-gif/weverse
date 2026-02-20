@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Digital Asset Platform for limited digital land ownership with performance-based revenue generation."
+    />
+    <title>Digital Asset Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <div class="hero__particles" aria-hidden="true"></div>
+      <div class="hero__content wrapper fade-in">
+        <div class="hero__visual">
+          <canvas id="earthCanvas" aria-label="Animated rotating Earth visualization"></canvas>
+        </div>
+        <div class="hero__text">
+          <p class="eyebrow">Digital Asset Platform</p>
+          <h1>Own Limited Digital Land Assets.</h1>
+          <p class="subheadline">
+            A performance-driven digital asset ecosystem powered by social amplification.
+          </p>
+          <div class="hero__cta-group">
+            <a class="btn btn--primary" href="#scarcity">View Available Plots</a>
+            <a class="btn btn--secondary" href="#how-it-works">How It Works</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="value-proposition" aria-labelledby="value-title">
+        <div class="wrapper">
+          <h2 id="value-title">Why Investors Choose This Platform</h2>
+          <div class="value-grid">
+            <article class="card">
+              <div class="icon" aria-hidden="true">🔒</div>
+              <h3>Secure Digital Ownership</h3>
+              <p>Tokenized rights with transparent, verifiable ownership records for each plot.</p>
+            </article>
+            <article class="card">
+              <div class="icon" aria-hidden="true">📈</div>
+              <h3>Performance-Based Yield</h3>
+              <p>Returns are tied to campaign outcomes and measurable social media impact.</p>
+            </article>
+            <article class="card">
+              <div class="icon" aria-hidden="true">📊</div>
+              <h3>Portfolio Tracking</h3>
+              <p>Monitor allocation, live campaign metrics, and projected monthly earnings.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="how-it-works" aria-labelledby="how-title">
+        <div class="wrapper">
+          <h2 id="how-title">How It Works</h2>
+          <ol class="steps">
+            <li>
+              <span class="step-number">01</span>
+              <h3>Acquire Digital Plot</h3>
+            </li>
+            <li>
+              <span class="step-number">02</span>
+              <h3>Connect Social Channels</h3>
+            </li>
+            <li>
+              <span class="step-number">03</span>
+              <h3>Participate in Campaigns</h3>
+            </li>
+            <li>
+              <span class="step-number">04</span>
+              <h3>Earn &amp; Track Returns</h3>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" id="scarcity" aria-labelledby="scarcity-title">
+        <div class="wrapper">
+          <h2 id="scarcity-title">Scarcity &amp; Live Data</h2>
+          <div class="metrics-grid">
+            <article class="metric">
+              <p class="metric__label">Total Plots</p>
+              <p class="metric__value" data-counter="12000">0</p>
+            </article>
+            <article class="metric">
+              <p class="metric__label">Plots Sold</p>
+              <p class="metric__value" data-counter="9340">0</p>
+            </article>
+            <article class="metric">
+              <p class="metric__label">Active Campaigns</p>
+              <p class="metric__value" data-counter="286">0</p>
+            </article>
+            <article class="metric">
+              <p class="metric__label">Revenue Distributed</p>
+              <p class="metric__value" data-counter="1845000">0</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="dashboard-preview" aria-labelledby="dashboard-title">
+        <div class="wrapper">
+          <h2 id="dashboard-title">Dashboard Preview</h2>
+          <div class="chart-grid">
+            <article class="chart-card">
+              <h3>Asset Allocation</h3>
+              <canvas id="allocationChart" role="img" aria-label="Asset allocation pie chart"></canvas>
+            </article>
+            <article class="chart-card">
+              <h3>Monthly Yield</h3>
+              <canvas id="yieldChart" role="img" aria-label="Monthly yield line chart"></canvas>
+            </article>
+            <article class="chart-card chart-card--wide">
+              <h3>Campaign Performance</h3>
+              <canvas id="campaignChart" role="img" aria-label="Campaign performance bar chart"></canvas>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section final-cta" aria-labelledby="cta-title">
+        <div class="wrapper">
+          <h2 id="cta-title">Secure Your Digital Asset Position.</h2>
+          <a class="btn btn--primary" href="#top">Explore Digital Assets</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>
